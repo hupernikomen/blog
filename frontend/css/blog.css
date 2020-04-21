@@ -1,0 +1,47 @@
+
+.main {
+   position: absolute;
+   width: calc(100% - 300px);
+   top: 7.5%;
+   right: 0;
+   padding: 0 8%;
+   box-sizing: border-box;
+}
+
+.container-post {
+   cursor: pointer;
+}
+
+.container-post:hover .titulo {
+   color: #009c82;
+   transition: .3s;
+}
+
+.post .titulo {
+   font-size: 1.3em;
+   margin-bottom: 1em;
+}
+
+.post .paragrafo {
+   margin-bottom: 1em;
+   line-height: 1.5em;
+   text-align: justify;
+   font-weight: 300;
+}
+
+.post a {
+   text-decoration: none;
+   color: #222;
+}
+
+.post hr {
+   width: 40%;
+   border-top: .5px solid #eee;
+   margin: 50px 0;
+}
+
+.rodape-post {
+   font-size: .9em;
+   color: #ccc;
+}
+

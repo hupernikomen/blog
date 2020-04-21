@@ -1,0 +1,78 @@
+.main {
+   position: absolute;
+   width: calc(100% - 300px);
+   top: 7.5%;
+   right: 0;
+   padding: 0 8%;
+   box-sizing: border-box;
+}
+
+main h1 {
+   font-size: 1.3em;
+   text-align: center;
+}
+
+main hr {
+   width: 30%;
+   border: none;
+   border-top: 1px solid #eeee;
+   margin: 5% auto;
+   
+}
+
+main p {
+   line-height: 1.5em;
+   text-align: justify;
+   font-weight: 300;
+}
+
+main p::first-letter {
+   font-size: 2.5em;
+   font-weight: 600;
+}
+
+.foto-perfil {
+   animation: foto .5s;
+   transform: rotate(0deg);
+   border: 1px solid #ddd;
+   
+   filter: saturate(.8) !important ;
+}
+
+
+@keyframes foto {
+   20% {
+      transform: rotate(5deg);
+   }
+   40% {
+      transform: rotate(-5deg);
+      box-shadow: 2px 2px 5px #777;
+   }
+   60% {
+      transform: rotate(5deg);
+      box-shadow: 3px 3px 5px #999;
+   }
+   80% {
+      transform: rotate(-5deg);
+      box-shadow: 2px 2px 5px #777;
+   }
+   100% {
+      transform: rotate(0deg);
+   }
+}
+
+strong {
+   font-weight: bold;
+}
+
+.btn-competencia {
+   padding: 5px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   text-decoration: none;
+   color: #222;
+}
+
+.btn-competencia:hover {
+   border: 1px solid #00bb9c;
+}
