@@ -1,0 +1,29 @@
+$font-grande: 1.5em;
+$font-padrao: 1em;
+
+$cor-principal: #00bb9c;
+$cor-texto: #222;
+$cor-linha: #ddd;
+
+$sombra: 1px 1px 3px #ddd;
+
+$border: 1px solid #ddd;
+$border-hover: 1px solid $cor-principal;
+
+@mixin fonte-destaque {
+   font-size: 1.3em;
+   font-weight: 500;
+   margin-bottom: 1em;
+}
+
+@mixin fonte-auxiliar {
+   font-size: 1em;
+   font-weight: 300;
+   line-height: 1.3em;
+}
+
+@mixin fonte-mini {
+   font-size: .8em;
+   font-weight: 500;
+   color: #ddd;
+}

@@ -1,0 +1,49 @@
+
+.titulo-contato {
+   @include fonte-destaque;
+   text-align: center;
+}
+
+.form-contato {
+   margin-top: 5%;
+   display: flex;
+   flex-direction: column;
+}
+
+.form-contato input, .form-contato textarea {
+   height: 3em;
+   margin: .2em 0;
+   padding: 10px;
+   box-sizing: border-box;
+   border: $border;
+   outline: 0;
+   border-radius: 4px;
+   
+   font-family: 'Raleway', sans-serif;
+   font-weight: 300;
+}
+
+.form-contato input:focus, form textarea:focus  {
+   border: $border-hover;
+}
+
+.form-contato textarea {
+   height: 10em;
+   resize: none;
+}
+
+.form-contato input[type=submit] {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: $border;
+   background: transparent;
+}
+
+.form-contato input[type=submit]:hover {
+   color: #fff;
+   background: $cor-principal;
+   border: 0;
+   transition: .3s;
+   cursor: pointer;
+}

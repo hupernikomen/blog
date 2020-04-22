@@ -1,0 +1,10 @@
+
+
+.leitura .titulo-leitura {
+   @include fonte-destaque;
+}
+
+.leitura .paragrafo-leitura {
+   @include fonte-auxiliar;
+   text-align: justify;
+}
