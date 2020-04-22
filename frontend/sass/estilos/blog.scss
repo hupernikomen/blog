@@ -9,11 +9,11 @@
 }
 
 .post .titulo {
-   @include fonte-destaque;
+   @extend %fonte-destaque;
 }
 
 .post .paragrafo {
-   @include fonte-auxiliar;
+   @extend %fonte-auxiliar;
    text-align: justify;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .rodape-post {
-   @include fonte-mini;
+   @extend %fonte-mini;
    margin-top: 1.3em;
 }
 

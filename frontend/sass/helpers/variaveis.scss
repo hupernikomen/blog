@@ -10,19 +10,21 @@ $sombra: 1px 1px 3px #ddd;
 $border: 1px solid #ddd;
 $border-hover: 1px solid $cor-principal;
 
-@mixin fonte-destaque {
+$largura-perfil: "350px";
+
+%fonte-destaque {
    font-size: 1.3em;
-   font-weight: 500;
+   font-weight: 600;
    margin-bottom: 1em;
 }
 
-@mixin fonte-auxiliar {
+%fonte-auxiliar {
    font-size: 1em;
-   font-weight: 300;
+   font-weight: 400;
    line-height: 1.3em;
 }
 
-@mixin fonte-mini {
+%fonte-mini {
    font-size: .8em;
    font-weight: 500;
    color: #ddd;

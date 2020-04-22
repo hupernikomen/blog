@@ -41,13 +41,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.perfil h1, .post .titulo, .titulo-contato, .titulo-sobre, .leitura .titulo-leitura {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 1em; }
+
+.perfil span, .post .paragrafo, .paragrafo-sobre, .texto-link-competencia, .leitura .paragrafo-leitura, .titulo-curriculo {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.3em; }
+
+.rodape-post {
+  font-size: .8em;
+  font-weight: 500;
+  color: #ddd; }
+
 body, html {
   height: 100%;
   font-family: 'Raleway', sans-serif; }
 
 .main {
   position: absolute;
-  width: calc(100% - 300px);
+  width: calc(100% - 350px);
   top: 7.5%;
   right: 0;
   padding: 0 8%;
@@ -68,7 +83,7 @@ hr {
 
 .perfil {
   height: 100%;
-  width: 300px;
+  width: 350px;
   border-right: 1px solid #ddd;
   position: fixed;
   display: flex;
@@ -91,15 +106,9 @@ hr {
   filter: saturate(0); }
 
 .perfil h1 {
-  font-size: 1.3em;
-  font-weight: 500;
-  margin-bottom: 1em;
   margin-bottom: 1.5em; }
 
 .perfil span {
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.3em;
   text-align: center; }
 
 .perfil nav ul {
@@ -109,7 +118,8 @@ hr {
     margin: 5px; }
     .perfil nav ul li a {
       text-decoration: none;
-      color: #222; }
+      color: #222;
+      font-weight: 500; }
       .perfil nav ul li a:hover {
         padding: 0px 5px;
         border-radius: 4px;
@@ -144,15 +154,7 @@ hr {
   color: #00bb9c;
   transition: .3s; }
 
-.post .titulo {
-  font-size: 1.3em;
-  font-weight: 500;
-  margin-bottom: 1em; }
-
 .post .paragrafo {
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.3em;
   text-align: justify; }
 
 .post a {
@@ -164,15 +166,9 @@ hr {
   margin: 50px 0; }
 
 .rodape-post {
-  font-size: .8em;
-  font-weight: 500;
-  color: #ddd;
   margin-top: 1.3em; }
 
 .titulo-contato {
-  font-size: 1.3em;
-  font-weight: 500;
-  margin-bottom: 1em;
   text-align: center; }
 
 .form-contato {
@@ -213,15 +209,9 @@ hr {
   cursor: pointer; }
 
 .titulo-sobre {
-  font-size: 1.3em;
-  font-weight: 500;
-  margin-bottom: 1em;
   text-align: center; }
 
 .paragrafo-sobre {
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.3em;
   text-align: justify; }
 
 .paragrafo-sobre::first-letter {
@@ -248,8 +238,8 @@ hr {
     box-shadow: 2px 2px 5px #777; }
   100% {
     transform: rotate(0deg); } }
-strong {
-  font-weight: bold; }
+.texto-link-competencia {
+  font-weight: 400; }
 
 .btn-competencia {
   padding: 5px;
@@ -261,21 +251,8 @@ strong {
 .btn-competencia:hover {
   border: 1px solid #00bb9c; }
 
-.leitura .titulo-leitura {
-  font-size: 1.3em;
-  font-weight: 500;
-  margin-bottom: 1em; }
-
 .leitura .paragrafo-leitura {
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.3em;
   text-align: justify; }
-
-.main p {
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.3em; }
 
 ul.tecnologias {
   margin: 10px 0;
@@ -291,7 +268,7 @@ ul.tecnologias {
     border-radius: 4px;
     display: inline-block;
     padding: 5px 10px 0;
-    font-weight: 300; }
+    font-weight: 400; }
     .main li.principal:hover .nivel {
       transition: .5s;
       color: #00bb9c; }

@@ -1,6 +1,6 @@
 
 .titulo-contato {
-   @include fonte-destaque;
+   @extend %fonte-destaque;
    text-align: center;
 }
 

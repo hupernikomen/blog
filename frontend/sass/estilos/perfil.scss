@@ -1,7 +1,7 @@
 
 .perfil {
    height: 100%;
-   width: 300px;
+   width: #{$largura-perfil};
    border-right: 1px solid $cor-linha;
    position: fixed;
 
@@ -30,12 +30,12 @@
 }
 
 .perfil h1 {
-   @include fonte-destaque;
+   @extend %fonte-destaque;
    margin-bottom: 1.5em;
 }
 
 .perfil span {
-   @include fonte-auxiliar;
+   @extend %fonte-auxiliar;
    text-align: center;
 }
 
@@ -49,6 +49,7 @@
       a {
          text-decoration: none;
          color: $cor-texto;
+         font-weight: 500;
       
          &:hover {
             padding: 0px 5px;
@@ -68,7 +69,6 @@
       }
    }
 }
-
 
 .perfil hr {
    margin: 10% auto;

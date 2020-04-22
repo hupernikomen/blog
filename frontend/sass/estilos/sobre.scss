@@ -1,11 +1,11 @@
 
 .titulo-sobre {
-   @include fonte-destaque;
+   @extend %fonte-destaque;
    text-align: center;
 }
 
 .paragrafo-sobre {
-   @include fonte-auxiliar;
+   @extend %fonte-auxiliar;
    text-align: justify;
 }
 
@@ -44,8 +44,9 @@
    }
 }
 
-strong {
-   font-weight: bold;
+.texto-link-competencia {
+   @extend %fonte-auxiliar;
+   font-weight: 400;
 }
 
 .btn-competencia {

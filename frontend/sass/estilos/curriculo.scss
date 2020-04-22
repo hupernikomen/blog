@@ -1,7 +1,7 @@
 
 
-.main p {
-   @include fonte-auxiliar;
+.titulo-curriculo {
+   @extend %fonte-auxiliar;
 }
 
 ul.tecnologias {
@@ -16,11 +16,11 @@ ul.tecnologias {
    &.principal {
       text-transform: uppercase;
       margin: 10px 0 10px 0;
-      border: 1px solid $cor-linha;
+      border: $border;
       border-radius: 4px;
       display: inline-block;
       padding: 5px 10px 0;
-      font-weight: 300;
+      font-weight: 400;
    
       &:hover .nivel {
          transition: .5s;
