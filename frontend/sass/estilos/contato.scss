@@ -10,17 +10,11 @@
    flex-direction: column;
 }
 
-.form-contato input, .form-contato textarea {
-   height: 3em;
-   margin: .2em 0;
-   padding: 10px;
-   box-sizing: border-box;
-   border: $border;
-   outline: 0;
-   border-radius: 4px;
-   
-   font-family: 'Raleway', sans-serif;
-   font-weight: 300;
+.form-contato input {
+   @extend %elementos-form;
+}
+.form-contato textarea {
+   @extend %elementos-form;
 }
 
 .form-contato input:focus, form textarea:focus  {

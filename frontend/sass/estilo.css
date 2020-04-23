@@ -1,3 +1,29 @@
+.perfil h1, .post .titulo, .titulo-contato, .titulo-sobre, .leitura .titulo-leitura {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 1em; }
+
+.perfil span, .post .paragrafo, .paragrafo-sobre, .texto-link-competencia, .leitura .paragrafo-leitura, .titulo-curriculo {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.3em; }
+
+.rodape-post {
+  font-size: .8em;
+  font-weight: 500;
+  color: #ddd; }
+
+.form-contato input, .form-contato textarea {
+  height: 3em;
+  margin: .2em 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  outline: 0;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -41,24 +67,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.perfil h1, .post .titulo, .titulo-contato, .titulo-sobre, .leitura .titulo-leitura {
-  font-size: 1.3em;
-  font-weight: 600;
-  margin-bottom: 1em; }
-
-.perfil span, .post .paragrafo, .paragrafo-sobre, .texto-link-competencia, .leitura .paragrafo-leitura, .titulo-curriculo {
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.3em; }
-
-.rodape-post {
-  font-size: .8em;
-  font-weight: 500;
-  color: #ddd; }
-
 body, html {
   height: 100%;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 .main {
   position: absolute;
@@ -176,17 +187,6 @@ hr {
   display: flex;
   flex-direction: column; }
 
-.form-contato input, .form-contato textarea {
-  height: 3em;
-  margin: .2em 0;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid #ddd;
-  outline: 0;
-  border-radius: 4px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300; }
-
 .form-contato input:focus, form textarea:focus {
   border: 1px solid #00bb9c; }
 
@@ -249,7 +249,8 @@ hr {
   color: #222; }
 
 .btn-competencia:hover {
-  border: 1px solid #00bb9c; }
+  border: 1px solid #00bb9c;
+  transition: .3s; }
 
 .leitura .paragrafo-leitura {
   text-align: justify; }
