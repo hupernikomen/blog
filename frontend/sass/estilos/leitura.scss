@@ -1,10 +1,35 @@
 
 
 .leitura .titulo-leitura {
-   @extend %fonte-destaque;
+   @extend %fonte-titulo;
 }
 
 .leitura .paragrafo-leitura {
    @extend %fonte-auxiliar;
+   margin-top: 1em;
    text-align: justify;
 }
+
+.topo-post {
+   display: flex;
+}
+
+span.data-leitura {
+   @extend %fonte-mini;
+}
+
+.btn-voltar {
+   position: fixed;
+   left: calc(50px + #{$largura-perfil});
+   top: 48px;
+   font-size: $font-grande;
+   color: $cor-linha;
+   cursor: pointer;
+   padding: 5px;
+
+   &:hover {
+      color: $cor-principal;
+      transition: .3s;
+   }
+}
+

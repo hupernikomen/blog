@@ -10,7 +10,7 @@
 
    <link rel="stylesheet" href="sass/estilo.css">
 
-   <title>Home | Wilson Ramos</title>
+   <title>Admin | Wilson Ramos</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
 
          <nav>
             <ul class="menu">
-               <li><a class="ativo" href="index.html">Blog</a></li>
+               <li><a href="index.html">Blog</a></li>
                <li><a href="sobre.html">Sobre</a></li>
                <li><a href="contato.html">Contato</a></li>
             </ul>
@@ -48,10 +48,20 @@
 
    </header>
 
-   <main class="main postagem"></main>
+   <main class="main">
+
+      <form class="form-admin" action="" method="post">
+
+         <input class="titulo-admin" type="text" placeholder="Titulo">
+         <textarea class="paragrafo-admin" cols="30" rows="10" placeholder="Conteudo da Postagem"></textarea>
+         <input type="submit" value="Postar">
+
+      </form>
+
+   </main>
 
    <script src="js/api/listagem.js"></script>
-   <script src="js/leitura.js"></script>
+   <script src="js/postar.js"></script>
 
 </body>
 

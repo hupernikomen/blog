@@ -1,0 +1,23 @@
+.form-admin {
+   display: flex;
+   flex-direction: column;
+
+   input, textarea {
+      @extend %elementos-form;
+   }
+
+   textarea {
+      height: 30em;
+      resize: none;
+   }
+
+   input[type='submit'] {
+      border: 0;
+
+      &:hover {
+         background: $cor-principal;
+         color: #fff;
+         cursor: pointer;
+      }
+   }
+}
