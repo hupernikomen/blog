@@ -1,10 +1,10 @@
-.leitura .titulo-leitura, .post .titulo {
+.leitura .titulo-leitura, .titulo-sobre, .titulo-contato, .post .titulo {
   font-size: 2em;
   font-weight: 600;
   margin-bottom: 1em;
 }
 
-.titulo-sobre, .titulo-contato, .perfil h2 {
+.perfil h2 {
   font-size: 1.3em;
   font-weight: 600;
   margin-bottom: 1em;
@@ -18,11 +18,11 @@
 
 span.data-leitura, .rodape-post {
   font-size: 0.8em;
-  font-weight: 500;
-  color: #ddd;
+  font-weight: 300;
+  color: #bbb;
 }
 
-.form-admin input, .form-admin textarea, .form-contato textarea, .form-contato input {
+.form-admin input, .form-admin textarea, .form-contato input, .form-contato textarea {
   height: 3em;
   margin: 0.2em 0;
   padding: 10px;
@@ -32,6 +32,24 @@ span.data-leitura, .rodape-post {
   border-radius: 4px;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+}
+.form-admin input:focus, .form-admin textarea:focus, .form-contato input:focus, .form-contato textarea:focus {
+  border: 1px solid #00bb9c;
+}
+
+.form-admin input[type=submit], .form-contato input[type=submit] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  background: transparent;
+}
+.form-admin input[type=submit]:hover, .form-contato input[type=submit]:hover {
+  color: #fff;
+  background: #00bb9c;
+  border: 0;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -110,7 +128,7 @@ hr {
   width: 20%;
   border: none;
   border-top: 1px dotted #ddd;
-  margin: 4% auto;
+  margin: 5% auto;
 }
 
 .perfil {
@@ -176,14 +194,17 @@ hr {
 }
 
 .perfil hr {
-  margin: 10% auto;
+  width: 20%;
+  border: none;
+  border-top: 1px dotted #ddd;
+  margin: 10% 0;
 }
 
 .perfil ul.social {
   display: flex;
 }
 .perfil ul.social i {
-  font-size: 1em;
+  font-size: 1.3em;
   margin: 10px;
   color: #00bb9c;
 }
@@ -196,7 +217,6 @@ hr {
 .container-post {
   cursor: pointer;
 }
-
 .container-post:hover .titulo {
   color: #00bb9c;
   transition: 0.3s;
@@ -231,43 +251,16 @@ hr {
   display: flex;
   flex-direction: column;
 }
-
-.form-contato input:focus, form textarea:focus {
-  border: 1px solid #00bb9c;
-}
-
 .form-contato textarea {
   height: 10em;
   resize: none;
 }
-
-.form-contato input[type=submit] {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #ddd;
-  background: transparent;
-}
-
-.form-contato input[type=submit]:hover {
-  color: #fff;
-  background: #00bb9c;
-  border: 0;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
 .titulo-sobre {
   text-align: center;
 }
 
 .paragrafo-sobre {
   text-align: justify;
-}
-
-.paragrafo-sobre::first-letter {
-  font-size: 2.5em;
-  font-weight: 500;
 }
 
 .foto-perfil.sobre {
@@ -308,7 +301,6 @@ hr {
   text-decoration: none;
   color: #222;
 }
-
 .btn-competencia:hover {
   border: 1px solid #00bb9c;
   transition: 0.3s;
@@ -318,10 +310,6 @@ hr {
   margin-top: 1em;
   text-align: justify;
   white-space: pre-wrap;
-}
-
-.topo-post {
-  display: flex;
 }
 
 .btn-voltar {
@@ -376,14 +364,6 @@ ul.tecnologias {
 .form-admin textarea {
   height: 30em;
   resize: none;
-}
-.form-admin input[type=submit] {
-  border: 0;
-}
-.form-admin input[type=submit]:hover {
-  background: #00bb9c;
-  color: #fff;
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=estilo.css.map */

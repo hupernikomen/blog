@@ -1,6 +1,6 @@
 $ff-padrao: 'Montserrat', sans-serif;
-$font-grande: 1.3em;
 $font-padrao: 1em;
+$font-grande: 1.3em;
 $font-gigante: 2em;
 
 $cor-principal: #00bb9c;
@@ -34,11 +34,11 @@ $largura-perfil: "350px";
 
 %fonte-mini {
    font-size: .8em;
-   font-weight: 500;
-   color: #ddd;
+   font-weight: 300;
+   color: #bbb;
 }
 
-%elementos-form {
+%elementos-form-input {
    height: 3em;
    margin: .2em 0;
    padding: 10px;
@@ -48,11 +48,31 @@ $largura-perfil: "350px";
    border-radius: 4px;
    font-family: $ff-padrao;
    font-weight: 300;
+
+   &:focus {
+      border: $border-hover;
+   }
 }
 
-@mixin linha($posicao) {
+%elementos-form-submit {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: $border;
+   background: transparent;
+
+   &:hover {
+      color: #fff;
+      background: $cor-principal;
+      border: 0;
+      transition: .3s;
+      cursor: pointer;
+   }
+}
+
+@mixin linha($altura, $posicao) {
    width: 20%;
    border: none;
    border-top: 1px dotted $cor-linha;
-   margin: 4% $posicao;
+   margin: $altura $posicao;
 }

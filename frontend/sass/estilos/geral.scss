@@ -23,5 +23,5 @@ body, html {
 }
 
 hr {
-   @include linha(auto)
+   @include linha(5%, auto);
 }

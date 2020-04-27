@@ -1,17 +1,12 @@
 
 .titulo-sobre {
-   @extend %fonte-destaque;
+   @extend %fonte-titulo;
    text-align: center;
 }
 
 .paragrafo-sobre {
    @extend %fonte-auxiliar;
    text-align: justify;
-}
-
-.paragrafo-sobre::first-letter {
-   font-size: 2.5em;
-   font-weight: 500;
 }
 
 .foto-perfil.sobre {
@@ -55,9 +50,9 @@
    border-radius: 4px;
    text-decoration: none;
    color: $cor-texto;
-}
 
-.btn-competencia:hover {
-   border: $border-hover;
-   transition: .3s;
+   &:hover {
+      border: $border-hover;
+      transition: .3s;
+   }
 }

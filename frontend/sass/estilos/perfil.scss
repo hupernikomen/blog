@@ -71,7 +71,7 @@
 }
 
 .perfil hr {
-   margin: 10% auto;
+   @include linha(10%, 0);
 }
 
 
@@ -79,7 +79,7 @@
    display: flex;
 
    i {
-      font-size: $font-padrao;
+      font-size: $font-grande;
       margin: 10px;
       color: $cor-principal;
    

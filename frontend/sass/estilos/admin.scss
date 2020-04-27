@@ -3,7 +3,7 @@
    flex-direction: column;
 
    input, textarea {
-      @extend %elementos-form;
+      @extend %elementos-form-input;
    }
 
    textarea {
@@ -12,12 +12,6 @@
    }
 
    input[type='submit'] {
-      border: 0;
-
-      &:hover {
-         background: $cor-principal;
-         color: #fff;
-         cursor: pointer;
-      }
+      @extend %elementos-form-submit
    }
 }

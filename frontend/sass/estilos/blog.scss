@@ -1,11 +1,11 @@
 
 .container-post {
    cursor: pointer;
-}
 
-.container-post:hover .titulo {
-   color: $cor-principal;
-   transition: .3s;
+   &:hover .titulo {
+      color: $cor-principal;
+      transition: .3s;
+   }
 }
 
 .post .titulo {
@@ -23,7 +23,7 @@
 }
 
 .post hr {
-   @include linha(0);
+   @include linha(4%, 0);
 }
 
 .rodape-post {
