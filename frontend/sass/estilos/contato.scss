@@ -10,7 +10,7 @@
    flex-direction: column;
 
    input, textarea {
-      @extend %elementos-form-input;
+      @extend %elementos-form;
    }
 
    textarea {

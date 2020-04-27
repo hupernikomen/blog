@@ -50,7 +50,11 @@
 
    <main class="main">
 
+      
       <form class="form-admin" action="" method="post">
+         <select data-select onchange="carregarPost()">
+            <option>Selecione um Post</option>
+         </select>
 
          <input class="titulo-admin" type="text" placeholder="Titulo">
          <textarea class="paragrafo-admin" cols="30" rows="10" placeholder="Conteudo da Postagem"></textarea>
@@ -62,6 +66,7 @@
 
    <script src="js/api/listagem.js"></script>
    <script src="js/postar.js"></script>
+   <script src="js/admin.js"></script>
 
 </body>
 

@@ -2,18 +2,21 @@
   font-size: 2em;
   font-weight: 600;
   margin-bottom: 1em;
+  color: #444;
 }
 
 .perfil h2 {
   font-size: 1.3em;
   font-weight: 600;
   margin-bottom: 1em;
+  color: #444;
 }
 
 .titulo-curriculo, .leitura .paragrafo-leitura, .texto-link-competencia, .paragrafo-sobre, .post .paragrafo, .perfil span {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.3em;
+  color: #444;
 }
 
 span.data-leitura, .rodape-post {
@@ -22,7 +25,7 @@ span.data-leitura, .rodape-post {
   color: #bbb;
 }
 
-.form-admin input, .form-admin textarea, .form-contato input, .form-contato textarea {
+.form-admin input, .form-admin textarea, .form-admin select, .form-contato input, .form-contato textarea {
   height: 3em;
   margin: 0.2em 0;
   padding: 10px;
@@ -33,7 +36,7 @@ span.data-leitura, .rodape-post {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
-.form-admin input:focus, .form-admin textarea:focus, .form-contato input:focus, .form-contato textarea:focus {
+.form-admin input:focus, .form-admin textarea:focus, .form-admin select:focus, .form-contato input:focus, .form-contato textarea:focus {
   border: 1px solid #00bb9c;
 }
 
@@ -139,7 +142,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #222;
+  color: #444;
 }
 
 .container-perfil {
@@ -175,7 +178,7 @@ hr {
 }
 .perfil nav ul li a {
   text-decoration: none;
-  color: #222;
+  color: #444;
   font-weight: 500;
 }
 .perfil nav ul li a:hover {
@@ -228,7 +231,7 @@ hr {
 
 .post a {
   text-decoration: none;
-  color: #222;
+  color: #444;
 }
 
 .post hr {
@@ -299,7 +302,7 @@ hr {
   border: 1px solid #ddd;
   border-radius: 4px;
   text-decoration: none;
-  color: #222;
+  color: #444;
 }
 .btn-competencia:hover {
   border: 1px solid #00bb9c;
@@ -310,6 +313,7 @@ hr {
   margin-top: 1em;
   text-align: justify;
   white-space: pre-wrap;
+  color: #444;
 }
 
 .btn-voltar {
@@ -349,7 +353,7 @@ ul.tecnologias {
   color: #00bb9c;
 }
 .main li.principal .nivel {
-  color: #222;
+  color: #444;
   margin-left: 10px;
 }
 .main li.secundario {

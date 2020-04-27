@@ -4,7 +4,7 @@ $font-grande: 1.3em;
 $font-gigante: 2em;
 
 $cor-principal: #00bb9c;
-$cor-texto: #222;
+$cor-texto: #444;
 $cor-linha: #ddd;
 
 $sombra: 1px 1px 3px #ddd;
@@ -18,18 +18,21 @@ $largura-perfil: "350px";
    font-size: $font-gigante;
    font-weight: 600;
    margin-bottom: 1em;
+   color: $cor-texto;
 }
 
 %fonte-destaque {
    font-size: $font-grande;
    font-weight: 600;
    margin-bottom: 1em;
+   color: $cor-texto;
 }
 
 %fonte-auxiliar {
    font-size: $font-padrao;
    font-weight: 400;
    line-height: 1.3em;
+   color: $cor-texto;
 }
 
 %fonte-mini {
@@ -38,7 +41,7 @@ $largura-perfil: "350px";
    color: #bbb;
 }
 
-%elementos-form-input {
+%elementos-form {
    height: 3em;
    margin: .2em 0;
    padding: 10px;
