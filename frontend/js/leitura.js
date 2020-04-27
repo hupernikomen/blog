@@ -9,16 +9,14 @@ listarPost(id).then( post => {
 
 })
 
-exibePostagem = (post) => {
+const exibePostagem = (post) => {
    const article = document.createElement('article');
    article.classList = 'leitura'
 
    const postagem = `
 
-   <div class="topo-post">
       <i onclick="voltarPaginaAnterior()" class="btn-voltar fas fa-chevron-left"></i>
       <h1 class="titulo-leitura">${post.titulo}</h1>
-   </div>
 
       <span class="data-leitura">${post.data}</span>
       <p class="paragrafo-leitura">${post.paragrafo}</p>
@@ -29,6 +27,7 @@ exibePostagem = (post) => {
    return article;
 }
 
-voltarPaginaAnterior = () => {
+const voltarPaginaAnterior = () => {
+
    window.history.back()
 }

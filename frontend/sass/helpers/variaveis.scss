@@ -49,3 +49,10 @@ $largura-perfil: "350px";
    font-family: $ff-padrao;
    font-weight: 300;
 }
+
+@mixin linha($posicao) {
+   width: 20%;
+   border: none;
+   border-top: 1px dotted $cor-linha;
+   margin: 4% $posicao;
+}

@@ -9,7 +9,7 @@
 }
 
 .post .titulo {
-   @extend %fonte-destaque;
+   @extend %fonte-titulo;
 }
 
 .post .paragrafo {
@@ -23,8 +23,7 @@
 }
 
 .post hr {
-   border-top: $border;
-   margin: 50px 0;
+   @include linha(0);
 }
 
 .rodape-post {
