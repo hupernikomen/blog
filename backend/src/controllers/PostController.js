@@ -5,8 +5,8 @@ const Post = mongoose.model('Post');
 module.exports = {
    async store(req, res) {
 
-      const post = await Post.create(req.body)
-      return res.json(post)
+      const post = await Post.create(req.body);
+      return res.json(post);
    },
 
    async index(req, res) {
@@ -21,9 +21,14 @@ module.exports = {
       return res.json(post)
    },
 
+   async update(req, res) {
+      const post = await Post.findByIdAndUpdate(req.params.id, req.body, {new: true});
+      return res.json(post)
+   },
+
    async destroy(req, res) {
       
-      await Post.findByIdAndDelete(req.params.id)
-      res.send('Excluido com sucesso')
+      await Post.findByIdAndDelete(req.params.id);
+      res.send('Excluido com sucesso');
    }
 }

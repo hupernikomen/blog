@@ -10,6 +10,7 @@ app.use(cors());
 mongoose.connect('mongodb+srv://hupernikomen:hpM422354@cluster0-jyfxc.mongodb.net/blog?retryWrites=true&w=majority',{
    useNewUrlParser: true,
    useUnifiedTopology: true,
+   useFindAndModify: false
 });
 
 requireDir('./src/models');

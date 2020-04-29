@@ -9,15 +9,14 @@ listarPosts()
       option.textContent = post.titulo;
       option.value = post._id;
 
-      select.appendChild(option);
-
+      select.prepend(option);
+      
    })
 })
 
 const carregarPost = () => {
    const titulo = document.querySelector('.titulo-admin');
    const paragrafo = document.querySelector('.paragrafo-admin');
-
 
    listarPost(select.value)
    .then( post => {
@@ -26,4 +25,3 @@ const carregarPost = () => {
       paragrafo.value = post.paragrafo;
    })
 }
-

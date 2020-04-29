@@ -1,8 +1,11 @@
 
 body, html {
    height: 100%;
-   font-family: $ff-padrao;
 }
+
+// * {
+//    box-shadow: 0 0 1px #000;
+// }
 
 .main {
    position: absolute;
@@ -11,17 +14,55 @@ body, html {
    right: 0;
    padding: 0 8%;
    box-sizing: border-box;
+
+   @media (max-width: #{$responsivo}) {
+      width: calc(100% - 50px);
+   }
 }
 
 .foto-perfil {
-   width: 120px;
+   width: 100%;
    border-radius: 50%;
    margin-bottom: 20px;
-   border: 1px solid $cor-linha;
+   border: $border;
 
    filter: saturate(0);
 }
 
 hr {
    @include linha(5%, auto);
+}
+
+.controles {
+   position: absolute;
+   width: 25%;
+   height: 100%;
+   right: -25%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   .botoes {
+      height: 85%;
+      
+      i {
+         cursor: pointer;
+         color: $corPadraoTexto;
+         font-size: $tamanhoFonteGrande;
+   
+         &:hover {
+            color: $corPrimaria;
+            transition: .3s;
+         }
+
+         &.btn-menu {
+            display: none;
+
+            @media (max-width: #{$responsivo}) {
+               display: block;
+            }
+         }
+      }
+   }
 }

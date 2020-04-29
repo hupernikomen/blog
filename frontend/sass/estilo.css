@@ -1,28 +1,32 @@
-.leitura .titulo-leitura, .titulo-sobre, .titulo-contato, .post .titulo {
-  font-size: 2em;
-  font-weight: 600;
+.leitura .titulo-leitura, .titulo-sobre, .titulo-contato, .post .titulo-post {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3em;
+  font-weight: 500;
   margin-bottom: 1em;
   color: #444;
 }
 
 .perfil h2 {
+  font-family: "Raleway", sans-serif;
   font-size: 1.3em;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 1em;
   color: #444;
 }
 
-.titulo-curriculo, .leitura .paragrafo-leitura, .texto-link-competencia, .paragrafo-sobre, .post .paragrafo, .perfil span {
+.leitura .paragrafo-leitura, .paragrafo-sobre, .post .paragrafo-post, .perfil span {
+  font-family: "Raleway", sans-serif;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.3em;
   color: #444;
 }
 
 span.data-leitura, .rodape-post {
+  font-family: "Montserrat", sans-serif;
+  color: #aaa;
   font-size: 0.8em;
   font-weight: 300;
-  color: #bbb;
 }
 
 .form-admin input, .form-admin textarea, .form-admin select, .form-contato input, .form-contato textarea {
@@ -38,6 +42,12 @@ span.data-leitura, .rodape-post {
 }
 .form-admin input:focus, .form-admin textarea:focus, .form-admin select:focus, .form-contato input:focus, .form-contato textarea:focus {
   border: 1px solid #00bb9c;
+}
+
+.perfil ul.social i:hover {
+  color: #00bb9c;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 .form-admin input[type=submit], .form-contato input[type=submit] {
@@ -107,20 +117,24 @@ table {
 
 body, html {
   height: 100%;
-  font-family: "Montserrat", sans-serif;
 }
 
 .main {
   position: absolute;
-  width: calc(100% - 350px);
+  width: calc(100% - 300px);
   top: 7.5%;
   right: 0;
   padding: 0 8%;
   box-sizing: border-box;
 }
+@media (max-width: 980px) {
+  .main {
+    width: calc(100% - 50px);
+  }
+}
 
 .foto-perfil {
-  width: 120px;
+  width: 100%;
   border-radius: 50%;
   margin-bottom: 20px;
   border: 1px solid #ddd;
@@ -134,15 +148,54 @@ hr {
   margin: 5% auto;
 }
 
+.controles {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  right: -25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controles .botoes {
+  height: 85%;
+}
+.controles .botoes i {
+  cursor: pointer;
+  color: #444;
+  font-size: 1.3em;
+}
+.controles .botoes i:hover {
+  color: #00bb9c;
+  transition: 0.3s;
+}
+.controles .botoes i.btn-menu {
+  display: none;
+}
+@media (max-width: 980px) {
+  .controles .botoes i.btn-menu {
+    display: block;
+  }
+}
+
 .perfil {
   height: 100%;
-  width: 350px;
-  border-right: 1px solid #ddd;
+  width: 300px;
   position: fixed;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #444;
+  background-image: url("../imagens/bg-perfil.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s;
+}
+@media (max-width: 980px) {
+  .perfil {
+    transform: translateX(-300px);
+  }
 }
 
 .container-perfil {
@@ -154,7 +207,7 @@ hr {
 }
 
 .foto-perfil.home {
-  width: 120px;
+  width: 100%;
   border-radius: 50%;
   margin-bottom: 20px;
   border: 1px solid #ddd;
@@ -179,20 +232,13 @@ hr {
 .perfil nav ul li a {
   text-decoration: none;
   color: #444;
-  font-weight: 500;
-}
-.perfil nav ul li a:hover {
-  padding: 0px 5px;
-  border-radius: 4px;
-  transition: 0.1s;
-  box-shadow: 1px 1px 3px #ddd;
+  font-weight: 300;
 }
 .perfil nav ul li a.ativo {
   background: #00bb9c;
   color: #fff;
   padding: 5px 30px;
-  border-radius: 4px;
-  box-shadow: 1px 1px 3px #ddd;
+  border-radius: 6px;
   font-weight: 300;
 }
 
@@ -208,24 +254,19 @@ hr {
 }
 .perfil ul.social i {
   font-size: 1.3em;
-  margin: 10px;
-  color: #00bb9c;
+  margin: 13px;
+  color: #888;
 }
-.perfil ul.social i:hover {
-  color: #008871;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
 .container-post {
   cursor: pointer;
 }
-.container-post:hover .titulo {
+.container-post:hover .titulo-post {
   color: #00bb9c;
-  transition: 0.3s;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
-.post .paragrafo {
+.post .paragrafo-post {
   text-align: justify;
 }
 
@@ -293,72 +334,10 @@ hr {
     transform: rotate(0deg);
   }
 }
-.texto-link-competencia {
-  font-weight: 400;
-}
-
-.btn-competencia {
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #444;
-}
-.btn-competencia:hover {
-  border: 1px solid #00bb9c;
-  transition: 0.3s;
-}
-
 .leitura .paragrafo-leitura {
   margin-top: 1em;
   text-align: justify;
   white-space: pre-wrap;
-  color: #444;
-}
-
-.btn-voltar {
-  position: fixed;
-  left: calc(50px + 350px);
-  top: 48px;
-  font-size: 1.3em;
-  color: #ddd;
-  cursor: pointer;
-  padding: 5px;
-}
-.btn-voltar:hover {
-  color: #00bb9c;
-  transition: 0.3s;
-}
-
-ul.tecnologias {
-  margin: 10px 0;
-  font-size: 0.8em;
-}
-
-.main li {
-  height: 20px;
-  margin: 2px 0;
-}
-.main li.principal {
-  text-transform: uppercase;
-  margin: 10px 0 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  display: inline-block;
-  padding: 5px 10px 0;
-  font-weight: 400;
-}
-.main li.principal:hover .nivel {
-  transition: 0.5s;
-  color: #00bb9c;
-}
-.main li.principal .nivel {
-  color: #444;
-  margin-left: 10px;
-}
-.main li.secundario {
-  margin-left: 20px;
-  font-weight: 300;
 }
 
 .form-admin {
@@ -366,7 +345,7 @@ ul.tecnologias {
   flex-direction: column;
 }
 .form-admin textarea {
-  height: 30em;
+  height: 25em;
   resize: none;
 }
 

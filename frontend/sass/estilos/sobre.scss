@@ -5,7 +5,7 @@
 }
 
 .paragrafo-sobre {
-   @extend %fonte-auxiliar;
+   @extend %fonte-padrao;
    text-align: justify;
 }
 
@@ -39,20 +39,3 @@
    }
 }
 
-.texto-link-competencia {
-   @extend %fonte-auxiliar;
-   font-weight: 400;
-}
-
-.btn-competencia {
-   padding: 5px;
-   border: $border;
-   border-radius: 4px;
-   text-decoration: none;
-   color: $cor-texto;
-
-   &:hover {
-      border: $border-hover;
-      transition: .3s;
-   }
-}

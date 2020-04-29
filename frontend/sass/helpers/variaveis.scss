@@ -1,44 +1,48 @@
-$ff-padrao: 'Montserrat', sans-serif;
-$font-padrao: 1em;
-$font-grande: 1.3em;
-$font-gigante: 2em;
+$Montserrat: 'Montserrat', sans-serif;
+$Relaway: 'Raleway', sans-serif;
 
-$cor-principal: #00bb9c;
-$cor-texto: #444;
-$cor-linha: #ddd;
+$tamanhoFontePadrao: 1em;
+$tamanhoFonteGrande: 1.3em;
 
-$sombra: 1px 1px 3px #ddd;
+$corPrimaria: #00bb9c;
+$corPadraoTexto: #444;
+$corLinha: #ddd;
+$border: 1px solid $corLinha;
+$borderHover: 1px solid $corPrimaria;
 
-$border: 1px solid #ddd;
-$border-hover: 1px solid $cor-principal;
+$largura-perfil: 300px;
 
-$largura-perfil: "350px";
+$responsivo: "980px";
 
 %fonte-titulo {
-   font-size: $font-gigante;
-   font-weight: 600;
+   font-family: $Montserrat;
+   font-size: $tamanhoFonteGrande;
+   font-weight: 500;
    margin-bottom: 1em;
-   color: $cor-texto;
-}
-
-%fonte-destaque {
-   font-size: $font-grande;
-   font-weight: 600;
-   margin-bottom: 1em;
-   color: $cor-texto;
+   color: $corPadraoTexto;
 }
 
 %fonte-auxiliar {
-   font-size: $font-padrao;
-   font-weight: 400;
+   font-family: $Relaway;
+   font-size: $tamanhoFonteGrande;
+   font-weight: 500;
+   margin-bottom: 1em;
+   color: $corPadraoTexto;
+}
+
+%fonte-padrao {
+   font-family: $Relaway;
+   font-size: $tamanhoFontePadrao;
+   font-weight: 300;
    line-height: 1.3em;
-   color: $cor-texto;
+   color: $corPadraoTexto;
 }
 
 %fonte-mini {
+   font-family: $Montserrat;
+   color: #aaa;
    font-size: .8em;
    font-weight: 300;
-   color: #bbb;
 }
 
 %elementos-form {
@@ -49,11 +53,19 @@ $largura-perfil: "350px";
    border: $border;
    outline: 0;
    border-radius: 4px;
-   font-family: $ff-padrao;
+   font-family: $Montserrat;
    font-weight: 300;
 
    &:focus {
-      border: $border-hover;
+      border: $borderHover;
+   }
+}
+
+%color-hover {
+   &:hover {
+      color: $corPrimaria;
+      transition: .2s;
+      cursor: pointer;
    }
 }
 
@@ -66,7 +78,7 @@ $largura-perfil: "350px";
 
    &:hover {
       color: #fff;
-      background: $cor-principal;
+      background: $corPrimaria;
       border: 0;
       transition: .3s;
       cursor: pointer;
@@ -76,6 +88,6 @@ $largura-perfil: "350px";
 @mixin linha($altura, $posicao) {
    width: 20%;
    border: none;
-   border-top: 1px dotted $cor-linha;
+   border-top: 1px dotted $corLinha;
    margin: $altura $posicao;
 }

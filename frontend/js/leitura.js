@@ -15,10 +15,9 @@ const exibePostagem = (post) => {
 
    const postagem = `
 
-      <i onclick="voltarPaginaAnterior()" class="btn-voltar fas fa-chevron-left"></i>
       <h1 class="titulo-leitura">${post.titulo}</h1>
 
-      <span class="data-leitura">${post.data}</span>
+      <span class="data-leitura">${formataData(post.data)}</span>
       <p class="paragrafo-leitura">${post.paragrafo}</p>
    `
 

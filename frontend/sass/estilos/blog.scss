@@ -2,24 +2,26 @@
 .container-post {
    cursor: pointer;
 
-   &:hover .titulo {
-      color: $cor-principal;
-      transition: .3s;
+   &:hover .titulo-post {
+      
+      color: $corPrimaria;
+      transition: .2s;
+      cursor: pointer;
    }
 }
 
-.post .titulo {
+.post .titulo-post {
    @extend %fonte-titulo;
 }
 
-.post .paragrafo {
-   @extend %fonte-auxiliar;
+.post .paragrafo-post {
+   @extend %fonte-padrao;
    text-align: justify;
 }
 
 .post a {
    text-decoration: none;
-   color: $cor-texto;
+   color: $corPadraoTexto;
 }
 
 .post hr {
