@@ -3,7 +3,7 @@
    flex-direction: column;
 
    input, textarea, select {
-      @extend %elementos-form;
+      @extend %elementosForm;
    }
 
    textarea {
@@ -12,6 +12,6 @@
    }
 
    input[type='submit'] {
-      @extend %elementos-form-submit
+      @extend %elementosFormSubmit;
    }
 }

@@ -1,6 +1,6 @@
 
 .titulo-contato {
-   @extend %fonte-titulo;
+   @extend %titulo;
    text-align: center;
 }
 
@@ -10,7 +10,7 @@
    flex-direction: column;
 
    input, textarea {
-      @extend %elementos-form;
+      @extend %elementosForm;
    }
 
    textarea {
@@ -19,6 +19,6 @@
    }
 
    input[type=submit] {
-      @extend %elementos-form-submit;
+      @extend %elementosFormSubmit;
    }
 }

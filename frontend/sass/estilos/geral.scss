@@ -9,14 +9,15 @@ body, html {
 
 .main {
    position: absolute;
-   width: calc(100% - #{$largura-perfil});
+   z-index: 0;
+   width: calc(100% - #{$larguraPerfil});
    top: 7.5%;
    right: 0;
-   padding: 0 8%;
+   padding: 0 7%;
    box-sizing: border-box;
 
    @media (max-width: #{$responsivo}) {
-      width: calc(100% - 50px);
+      width: calc(100% - 40px);
    }
 }
 
@@ -35,9 +36,9 @@ hr {
 
 .controles {
    position: absolute;
-   width: 25%;
+   width: 20%;
    height: 100%;
-   right: -25%;
+   right: -20%;
 
    display: flex;
    justify-content: center;
@@ -48,7 +49,7 @@ hr {
       
       i {
          cursor: pointer;
-         color: $corPadraoTexto;
+         color: $corClara;
          font-size: $tamanhoFonteGrande;
    
          &:hover {

@@ -1,33 +1,17 @@
 
 
 .leitura .titulo-leitura {
-   @extend %fonte-titulo;
+   @extend %titulo;
 }
 
 .leitura .paragrafo-leitura {
-   @extend %fonte-padrao;
+   @extend %conteudo;
    margin-top: 1em;
    text-align: justify;
    white-space: pre-wrap;
 }
 
 span.data-leitura {
-   @extend %fonte-mini;
+   @extend %miniConteudo;
 }
-
-// .btn-voltar {
-//    position: fixed;
-//    left: calc(3.5% + #{$largura-perfil});
-//    top: 43px;
-//    font-size: $font-grande;
-//    color: $cor-linha;
-//    cursor: pointer;
-//    padding: 5px;
-
-//    @extend %color-hover;
-
-//    @media (max-width: #{$responsivo1}) {
-//       left: 3.5%;
-//    }
-// }
 

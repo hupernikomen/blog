@@ -6,15 +6,14 @@ $tamanhoFonteGrande: 1.3em;
 
 $corPrimaria: #00bb9c;
 $corPadraoTexto: #444;
-$corLinha: #ddd;
-$border: 1px solid $corLinha;
+$corClara: #ccc;
+$border: 1px solid $corClara;
 $borderHover: 1px solid $corPrimaria;
 
-$largura-perfil: 300px;
-
+$larguraPerfil: 325px;
 $responsivo: "980px";
 
-%fonte-titulo {
+%titulo {
    font-family: $Montserrat;
    font-size: $tamanhoFonteGrande;
    font-weight: 500;
@@ -22,15 +21,7 @@ $responsivo: "980px";
    color: $corPadraoTexto;
 }
 
-%fonte-auxiliar {
-   font-family: $Relaway;
-   font-size: $tamanhoFonteGrande;
-   font-weight: 500;
-   margin-bottom: 1em;
-   color: $corPadraoTexto;
-}
-
-%fonte-padrao {
+%conteudo {
    font-family: $Relaway;
    font-size: $tamanhoFontePadrao;
    font-weight: 300;
@@ -38,14 +29,14 @@ $responsivo: "980px";
    color: $corPadraoTexto;
 }
 
-%fonte-mini {
+%miniConteudo {
    font-family: $Montserrat;
-   color: #aaa;
+   color: $corClara;
    font-size: .8em;
    font-weight: 300;
 }
 
-%elementos-form {
+%elementosForm {
    height: 3em;
    margin: .2em 0;
    padding: 10px;
@@ -61,15 +52,7 @@ $responsivo: "980px";
    }
 }
 
-%color-hover {
-   &:hover {
-      color: $corPrimaria;
-      transition: .2s;
-      cursor: pointer;
-   }
-}
-
-%elementos-form-submit {
+%elementosFormSubmit {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -85,9 +68,9 @@ $responsivo: "980px";
    }
 }
 
-@mixin linha($altura, $posicao) {
+@mixin linha($vertical, $horizontal) {
    width: 20%;
    border: none;
-   border-top: 1px dotted $corLinha;
-   margin: $altura $posicao;
+   border-top: 1px dotted $corClara;
+   margin: $vertical $horizontal;
 }

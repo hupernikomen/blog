@@ -1,7 +1,7 @@
 
 .perfil {
    height: 100%;
-   width: 300px;
+   width: $larguraPerfil;
    position: fixed;
    z-index: 1;
    
@@ -14,11 +14,16 @@
    background-repeat: no-repeat;
    background-size: cover;
    transition: .3s;
-
-   @media (max-width: 980px) {
-      transform: translateX(-300px)
+   
+   @media (max-width: $responsivo) {
+      transform: translateX(-$larguraPerfil);
    }
+}
 
+.exibePerfil {
+   transform: translateX(0);
+   width: 100%;
+   height: 100%;
 }
 
 .container-perfil {
@@ -39,12 +44,13 @@
 }
 
 .perfil h2 {
-   @extend %fonte-auxiliar;
+   @extend %titulo;
+   font-family: $Relaway;
    margin-bottom: 1.5em;
 }
 
 .perfil span {
-   @extend %fonte-padrao;
+   @extend %conteudo;
    text-align: center;
 }
 
@@ -66,7 +72,6 @@
             padding: 5px 30px;
             border-radius: 6px;
             font-weight: 300;
-            
          }
       }
    }
@@ -76,17 +81,18 @@
    @include linha(10%, 0);
 }
 
-
 .perfil ul.social {
    display: flex;
 
    i {
       font-size: $tamanhoFonteGrande;
-      margin: 13px;
+      margin: 10px;
       color: #888;
    
       &:hover {
-         @extend %color-hover;
+         color: $corPrimaria;
+         transition: .2s;
+         cursor: pointer;
       }
    }
 }

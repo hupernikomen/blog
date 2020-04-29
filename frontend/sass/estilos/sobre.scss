@@ -1,11 +1,11 @@
 
 .titulo-sobre {
-   @extend %fonte-titulo;
+   @extend %titulo;
    text-align: center;
 }
 
 .paragrafo-sobre {
-   @extend %fonte-padrao;
+   @extend %conteudo;
    text-align: justify;
 }
 

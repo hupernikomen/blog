@@ -1,13 +1,5 @@
-.leitura .titulo-leitura, .titulo-sobre, .titulo-contato, .post .titulo-post {
+.leitura .titulo-leitura, .titulo-sobre, .titulo-contato, .post .titulo-post, .perfil h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.3em;
-  font-weight: 500;
-  margin-bottom: 1em;
-  color: #444;
-}
-
-.perfil h2 {
-  font-family: "Raleway", sans-serif;
   font-size: 1.3em;
   font-weight: 500;
   margin-bottom: 1em;
@@ -24,7 +16,7 @@
 
 span.data-leitura, .rodape-post {
   font-family: "Montserrat", sans-serif;
-  color: #aaa;
+  color: #ccc;
   font-size: 0.8em;
   font-weight: 300;
 }
@@ -34,7 +26,7 @@ span.data-leitura, .rodape-post {
   margin: 0.2em 0;
   padding: 10px;
   box-sizing: border-box;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   outline: 0;
   border-radius: 4px;
   font-family: "Montserrat", sans-serif;
@@ -44,17 +36,11 @@ span.data-leitura, .rodape-post {
   border: 1px solid #00bb9c;
 }
 
-.perfil ul.social i:hover {
-  color: #00bb9c;
-  transition: 0.2s;
-  cursor: pointer;
-}
-
 .form-admin input[type=submit], .form-contato input[type=submit] {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   background: transparent;
 }
 .form-admin input[type=submit]:hover, .form-contato input[type=submit]:hover {
@@ -121,15 +107,16 @@ body, html {
 
 .main {
   position: absolute;
-  width: calc(100% - 300px);
+  z-index: 0;
+  width: calc(100% - 325px);
   top: 7.5%;
   right: 0;
-  padding: 0 8%;
+  padding: 0 7%;
   box-sizing: border-box;
 }
 @media (max-width: 980px) {
   .main {
-    width: calc(100% - 50px);
+    width: calc(100% - 40px);
   }
 }
 
@@ -137,22 +124,22 @@ body, html {
   width: 100%;
   border-radius: 50%;
   margin-bottom: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   filter: saturate(0);
 }
 
 hr {
   width: 20%;
   border: none;
-  border-top: 1px dotted #ddd;
+  border-top: 1px dotted #ccc;
   margin: 5% auto;
 }
 
 .controles {
   position: absolute;
-  width: 25%;
+  width: 20%;
   height: 100%;
-  right: -25%;
+  right: -20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,7 +149,7 @@ hr {
 }
 .controles .botoes i {
   cursor: pointer;
-  color: #444;
+  color: #ccc;
   font-size: 1.3em;
 }
 .controles .botoes i:hover {
@@ -180,7 +167,7 @@ hr {
 
 .perfil {
   height: 100%;
-  width: 300px;
+  width: 325px;
   position: fixed;
   z-index: 1;
   display: flex;
@@ -194,8 +181,14 @@ hr {
 }
 @media (max-width: 980px) {
   .perfil {
-    transform: translateX(-300px);
+    transform: translateX(-325px);
   }
+}
+
+.exibePerfil {
+  transform: translateX(0);
+  width: 100%;
+  height: 100%;
 }
 
 .container-perfil {
@@ -210,11 +203,12 @@ hr {
   width: 100%;
   border-radius: 50%;
   margin-bottom: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   filter: saturate(0);
 }
 
 .perfil h2 {
+  font-family: "Raleway", sans-serif;
   margin-bottom: 1.5em;
 }
 
@@ -245,7 +239,7 @@ hr {
 .perfil hr {
   width: 20%;
   border: none;
-  border-top: 1px dotted #ddd;
+  border-top: 1px dotted #ccc;
   margin: 10% 0;
 }
 
@@ -254,9 +248,15 @@ hr {
 }
 .perfil ul.social i {
   font-size: 1.3em;
-  margin: 13px;
+  margin: 10px;
   color: #888;
 }
+.perfil ul.social i:hover {
+  color: #00bb9c;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
 .container-post {
   cursor: pointer;
 }
@@ -278,7 +278,7 @@ hr {
 .post hr {
   width: 20%;
   border: none;
-  border-top: 1px dotted #ddd;
+  border-top: 1px dotted #ccc;
   margin: 4% 0;
 }
 
@@ -310,7 +310,7 @@ hr {
 .foto-perfil.sobre {
   animation: foto 0.5s;
   transform: rotate(0deg);
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   filter: saturate(0.8) !important;
 }
 
