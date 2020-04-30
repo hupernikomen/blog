@@ -1,8 +1,8 @@
 
-.container-post {
+.containerPost {
    cursor: pointer;
 
-   &:hover .titulo-post {
+   &:hover .tituloPost {
       
       color: $corPrimaria;
       transition: .2s;
@@ -10,11 +10,11 @@
    }
 }
 
-.post .titulo-post {
+.post .tituloPost {
    @extend %titulo;
 }
 
-.post .paragrafo-post {
+.post .paragrafoPost {
    @extend %conteudo;
    text-align: justify;
 }
@@ -28,7 +28,7 @@
    @include linha(4%, 0);
 }
 
-.rodape-post {
+.rodapePost {
    @extend %miniConteudo;
    margin-top: 1.3em;
 }

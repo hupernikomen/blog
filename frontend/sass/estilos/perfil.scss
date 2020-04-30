@@ -1,8 +1,8 @@
 
-.perfil {
-   height: 100%;
-   width: $larguraPerfil;
+.header {
    position: fixed;
+   width: $larguraPerfil;
+   height: 100%;
    z-index: 1;
    
    display: flex;
@@ -20,79 +20,73 @@
    }
 }
 
-.exibePerfil {
-   transform: translateX(0);
-   width: 100%;
-   height: 100%;
-}
-
-.container-perfil {
+.containerPerfil {
    width: 80%;
    height: 85%;
    display: flex;
    align-items: center;
    flex-direction: column;
-}
 
-.foto-perfil.home {
-   width: 100%;
-   border-radius: 50%;
-   margin-bottom: 20px;
-   border: $border;
 
-   filter: saturate(0);
-}
-
-.perfil h2 {
-   @extend %titulo;
-   font-family: $Relaway;
-   margin-bottom: 1.5em;
-}
-
-.perfil span {
-   @extend %conteudo;
-   text-align: center;
-}
-
-.perfil nav ul {
-   text-align: center;
-
-   li {
-      padding: 5px;
-      margin: 5px;
+   h2 {
+      @extend %titulo;
+      margin-bottom: 1.5em;
+      font-weight: 400;
+      color: $textoPerfil;
+   }
    
-      a {
-         text-decoration: none;
-         color: $corPadraoTexto;
-         font-weight: 300;
+   span {
+      @extend %conteudo;
+      font-weight: 300;
+      text-align: center;
+      color: $textoPerfil;
+   }
+
+   nav ul {
+      text-align: center;
       
-         &.ativo {
-            background: $corPrimaria;
-            color: #fff;
-            padding: 5px 30px;
-            border-radius: 6px;
-            font-weight: 300;
+      li {
+         padding: 5px;
+         margin: 5px 0;
+         
+         a {
+            text-decoration: none;
+            color: $corPadraoTexto;
+            font-family: $Roboto;
+            font-size: 1em;
+            color: $textoPerfil;
+            
+            &.ativo {
+               background: $corPrimaria;
+               padding: 5px 15px;
+               border-radius: 6px;
+               font-weight: 300;
+            }
+         }
+      }
+   }
+
+   hr { @include linha(15%, 0) }
+
+   ul.social {
+      display: flex;
+      
+      i {
+         font-size: $tamanhoFonteGrande;
+         margin: 10px;
+         color: $textoPerfil;
+         
+         &:hover {
+            color: $corPrimaria;
+            transition: .2s;
+            cursor: pointer;
          }
       }
    }
 }
 
-.perfil hr {
-   @include linha(10%, 0);
-}
-
-.perfil ul.social {
-   display: flex;
-
-   i {
-      font-size: $tamanhoFonteGrande;
-      margin: 10px;
-      color: #888;
-   
-      &:hover {
-         color: $corPrimaria;
-         transition: .2s;
-         cursor: pointer;
-      }
-   }
+.exibePerfil {
+   transform: translateX(0);
+   width: 100%;
+   height: 100%;
 }

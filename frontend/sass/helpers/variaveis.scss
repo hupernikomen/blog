@@ -1,28 +1,29 @@
-$Montserrat: 'Montserrat', sans-serif;
 $Relaway: 'Raleway', sans-serif;
+$Roboto: 'Roboto Slab', sans-serif;
 
 $tamanhoFontePadrao: 1em;
-$tamanhoFonteGrande: 1.3em;
+$tamanhoFonteGrande: 1.5em;
 
 $corPrimaria: #00bb9c;
 $corPadraoTexto: #444;
 $corClara: #ccc;
 $border: 1px solid $corClara;
 $borderHover: 1px solid $corPrimaria;
+$textoPerfil: #eee;
 
-$larguraPerfil: 325px;
-$responsivo: "980px";
+$larguraPerfil: 320px;
+$responsivo: "768px";
 
 %titulo {
-   font-family: $Montserrat;
+   font-family: $Roboto;
    font-size: $tamanhoFonteGrande;
-   font-weight: 500;
+   font-weight: 600;
    margin-bottom: 1em;
    color: $corPadraoTexto;
 }
 
 %conteudo {
-   font-family: $Relaway;
+   font-family: $Roboto;
    font-size: $tamanhoFontePadrao;
    font-weight: 300;
    line-height: 1.3em;
@@ -30,7 +31,7 @@ $responsivo: "980px";
 }
 
 %miniConteudo {
-   font-family: $Montserrat;
+   font-family: $Roboto;
    color: $corClara;
    font-size: .8em;
    font-weight: 300;
@@ -44,7 +45,7 @@ $responsivo: "980px";
    border: $border;
    outline: 0;
    border-radius: 4px;
-   font-family: $Montserrat;
+   font-family: $Roboto;
    font-weight: 300;
 
    &:focus {

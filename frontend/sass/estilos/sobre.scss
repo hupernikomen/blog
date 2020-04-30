@@ -1,41 +1,33 @@
 
-.titulo-sobre {
+.tituloSobre {
    @extend %titulo;
    text-align: center;
 }
 
-.paragrafo-sobre {
+.paragrafoSobre {
    @extend %conteudo;
    text-align: justify;
 }
 
-.foto-perfil.sobre {
-   animation: foto .5s;
+.fotoPerfil.sobre {
+   animation: fotoPerfil .5s;
    transform: rotate(0deg);
-   border: $border;
-   
-   filter: saturate(.8) !important ;
 }
 
-
-@keyframes foto {
-   20% {
-      transform: rotate(5deg);
-   }
+@keyframes fotoPerfil {
+   20% { transform: rotate(6deg) }
    40% {
-      transform: rotate(-5deg);
-      box-shadow: 2px 2px 5px #777;
+      transform: rotate(-8deg);
+      box-shadow: 2px 2px 5px #000;
    }
    60% {
-      transform: rotate(5deg);
-      box-shadow: 3px 3px 5px #999;
+      transform: rotate(13deg);
+      box-shadow: 5px 5px 8px #000;
    }
    80% {
-      transform: rotate(-5deg);
-      box-shadow: 2px 2px 5px #777;
+      transform: rotate(-8deg);
+      box-shadow: 2px 2px 5px #000;
    }
-   100% {
-      transform: rotate(0deg);
-   }
+   100% { transform: rotate(0deg) }
 }
 

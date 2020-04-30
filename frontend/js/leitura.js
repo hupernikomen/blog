@@ -15,10 +15,10 @@ const exibePostagem = (post) => {
 
    const postagem = `
 
-      <h1 class="titulo-leitura">${post.titulo}</h1>
+      <h1 class="tituloLeitura">${post.titulo}</h1>
 
-      <span class="data-leitura">${formataData(post.data)}</span>
-      <p class="paragrafo-leitura">${post.paragrafo}</p>
+      <span class="dataLeitura">${formataData(post.data)}</span>
+      <p class="paragrafoLeitura">${post.paragrafo}</p>
    `
 
    article.innerHTML = postagem;

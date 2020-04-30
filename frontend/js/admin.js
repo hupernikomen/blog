@@ -15,8 +15,8 @@ listarPosts()
 })
 
 const carregarPost = () => {
-   const titulo = document.querySelector('.titulo-admin');
-   const paragrafo = document.querySelector('.paragrafo-admin');
+   const titulo = document.querySelector('.tituloAdmin');
+   const paragrafo = document.querySelector('.paragrafoAdmin');
 
    listarPost(select.value)
    .then( post => {

@@ -1,8 +1,7 @@
-const formAdmin = document.querySelector('.form-admin');
-const titulo = document.querySelector('.titulo-admin');
-const paragrafo = document.querySelector('.paragrafo-admin');
+const formAdmin = document.querySelector('.formAdmin');
+const titulo = document.querySelector('.tituloAdmin');
+const paragrafo = document.querySelector('.paragrafoAdmin');
 const formSelect = document.querySelector('[data-select]');
-
 
 const id_post = [];
 

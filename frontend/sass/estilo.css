@@ -1,27 +1,27 @@
-.leitura .titulo-leitura, .titulo-sobre, .titulo-contato, .post .titulo-post, .perfil h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.3em;
-  font-weight: 500;
+.tituloLeitura, .tituloSobre, .tituloContato, .post .tituloPost, .containerPerfil h2 {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
   margin-bottom: 1em;
   color: #444;
 }
 
-.leitura .paragrafo-leitura, .paragrafo-sobre, .post .paragrafo-post, .perfil span {
-  font-family: "Raleway", sans-serif;
+.paragrafoLeitura, .paragrafoSobre, .post .paragrafoPost, .containerPerfil span {
+  font-family: "Roboto Slab", sans-serif;
   font-size: 1em;
   font-weight: 300;
   line-height: 1.3em;
   color: #444;
 }
 
-span.data-leitura, .rodape-post {
-  font-family: "Montserrat", sans-serif;
+span.dataLeitura, .rodapePost {
+  font-family: "Roboto Slab", sans-serif;
   color: #ccc;
   font-size: 0.8em;
   font-weight: 300;
 }
 
-.form-admin input, .form-admin textarea, .form-admin select, .form-contato input, .form-contato textarea {
+.formAdmin input, .formAdmin textarea, .formAdmin select, .formContato input, .formContato textarea {
   height: 3em;
   margin: 0.2em 0;
   padding: 10px;
@@ -29,21 +29,21 @@ span.data-leitura, .rodape-post {
   border: 1px solid #ccc;
   outline: 0;
   border-radius: 4px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-weight: 300;
 }
-.form-admin input:focus, .form-admin textarea:focus, .form-admin select:focus, .form-contato input:focus, .form-contato textarea:focus {
+.formAdmin input:focus, .formAdmin textarea:focus, .formAdmin select:focus, .formContato input:focus, .formContato textarea:focus {
   border: 1px solid #00bb9c;
 }
 
-.form-admin input[type=submit], .form-contato input[type=submit] {
+.formAdmin input[type=submit], .formContato input[type=submit] {
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #ccc;
   background: transparent;
 }
-.form-admin input[type=submit]:hover, .form-contato input[type=submit]:hover {
+.formAdmin input[type=submit]:hover, .formContato input[type=submit]:hover {
   color: #fff;
   background: #00bb9c;
   border: 0;
@@ -108,24 +108,22 @@ body, html {
 .main {
   position: absolute;
   z-index: 0;
-  width: calc(100% - 325px);
+  width: calc(100% - 320px);
   top: 7.5%;
   right: 0;
   padding: 0 7%;
   box-sizing: border-box;
 }
-@media (max-width: 980px) {
+@media (max-width: 768px) {
   .main {
     width: calc(100% - 40px);
   }
 }
 
-.foto-perfil {
+.fotoPerfil {
   width: 100%;
   border-radius: 50%;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-  filter: saturate(0);
 }
 
 hr {
@@ -137,38 +135,38 @@ hr {
 
 .controles {
   position: absolute;
-  width: 20%;
+  width: 15%;
   height: 100%;
-  right: -20%;
+  right: -15%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
-.controles .botoes {
+.controles .botoesControles {
   height: 85%;
 }
-.controles .botoes i {
+.controles .botoesControles i {
   cursor: pointer;
   color: #ccc;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
-.controles .botoes i:hover {
+.controles .botoesControles i:hover {
   color: #00bb9c;
   transition: 0.3s;
 }
-.controles .botoes i.btn-menu {
+.controles .botoesControles i.botaoMenu {
   display: none;
 }
-@media (max-width: 980px) {
-  .controles .botoes i.btn-menu {
+@media (max-width: 768px) {
+  .controles .botoesControles i.botaoMenu {
     display: block;
   }
 }
 
-.perfil {
-  height: 100%;
-  width: 325px;
+.header {
   position: fixed;
+  width: 320px;
+  height: 100%;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -179,10 +177,67 @@ hr {
   background-size: cover;
   transition: 0.3s;
 }
-@media (max-width: 980px) {
-  .perfil {
-    transform: translateX(-325px);
+@media (max-width: 768px) {
+  .header {
+    transform: translateX(-320px);
   }
+}
+
+.containerPerfil {
+  width: 80%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.containerPerfil h2 {
+  margin-bottom: 1.5em;
+  font-weight: 400;
+  color: #eee;
+}
+.containerPerfil span {
+  font-weight: 300;
+  text-align: center;
+  color: #eee;
+}
+.containerPerfil nav ul {
+  text-align: center;
+}
+.containerPerfil nav ul li {
+  padding: 5px;
+  margin: 5px 0;
+}
+.containerPerfil nav ul li a {
+  text-decoration: none;
+  color: #444;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1em;
+  color: #eee;
+}
+.containerPerfil nav ul li a.ativo {
+  background: #00bb9c;
+  padding: 5px 15px;
+  border-radius: 6px;
+  font-weight: 300;
+}
+.containerPerfil hr {
+  width: 20%;
+  border: none;
+  border-top: 1px dotted #ccc;
+  margin: 15% 0;
+}
+.containerPerfil ul.social {
+  display: flex;
+}
+.containerPerfil ul.social i {
+  font-size: 1.5em;
+  margin: 10px;
+  color: #eee;
+}
+.containerPerfil ul.social i:hover {
+  color: #00bb9c;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 .exibePerfil {
@@ -191,82 +246,16 @@ hr {
   height: 100%;
 }
 
-.container-perfil {
-  width: 80%;
-  height: 85%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.containerPost {
+  cursor: pointer;
 }
-
-.foto-perfil.home {
-  width: 100%;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  filter: saturate(0);
-}
-
-.perfil h2 {
-  font-family: "Raleway", sans-serif;
-  margin-bottom: 1.5em;
-}
-
-.perfil span {
-  text-align: center;
-}
-
-.perfil nav ul {
-  text-align: center;
-}
-.perfil nav ul li {
-  padding: 5px;
-  margin: 5px;
-}
-.perfil nav ul li a {
-  text-decoration: none;
-  color: #444;
-  font-weight: 300;
-}
-.perfil nav ul li a.ativo {
-  background: #00bb9c;
-  color: #fff;
-  padding: 5px 30px;
-  border-radius: 6px;
-  font-weight: 300;
-}
-
-.perfil hr {
-  width: 20%;
-  border: none;
-  border-top: 1px dotted #ccc;
-  margin: 10% 0;
-}
-
-.perfil ul.social {
-  display: flex;
-}
-.perfil ul.social i {
-  font-size: 1.3em;
-  margin: 10px;
-  color: #888;
-}
-.perfil ul.social i:hover {
+.containerPost:hover .tituloPost {
   color: #00bb9c;
   transition: 0.2s;
   cursor: pointer;
 }
 
-.container-post {
-  cursor: pointer;
-}
-.container-post:hover .titulo-post {
-  color: #00bb9c;
-  transition: 0.2s;
-  cursor: pointer;
-}
-
-.post .paragrafo-post {
+.post .paragrafoPost {
   text-align: justify;
 }
 
@@ -282,69 +271,67 @@ hr {
   margin: 4% 0;
 }
 
-.rodape-post {
+.rodapePost {
   margin-top: 1.3em;
 }
 
-.titulo-contato {
+.tituloContato {
   text-align: center;
 }
 
-.form-contato {
+.formContato {
   margin-top: 5%;
   display: flex;
   flex-direction: column;
 }
-.form-contato textarea {
+.formContato textarea {
   height: 10em;
   resize: none;
 }
-.titulo-sobre {
+.tituloSobre {
   text-align: center;
 }
 
-.paragrafo-sobre {
+.paragrafoSobre {
   text-align: justify;
 }
 
-.foto-perfil.sobre {
-  animation: foto 0.5s;
+.fotoPerfil.sobre {
+  animation: fotoPerfil 0.5s;
   transform: rotate(0deg);
-  border: 1px solid #ccc;
-  filter: saturate(0.8) !important;
 }
 
-@keyframes foto {
+@keyframes fotoPerfil {
   20% {
-    transform: rotate(5deg);
+    transform: rotate(6deg);
   }
   40% {
-    transform: rotate(-5deg);
-    box-shadow: 2px 2px 5px #777;
+    transform: rotate(-8deg);
+    box-shadow: 2px 2px 5px #000;
   }
   60% {
-    transform: rotate(5deg);
-    box-shadow: 3px 3px 5px #999;
+    transform: rotate(13deg);
+    box-shadow: 5px 5px 8px #000;
   }
   80% {
-    transform: rotate(-5deg);
-    box-shadow: 2px 2px 5px #777;
+    transform: rotate(-8deg);
+    box-shadow: 2px 2px 5px #000;
   }
   100% {
     transform: rotate(0deg);
   }
 }
-.leitura .paragrafo-leitura {
+.paragrafoLeitura {
   margin-top: 1em;
   text-align: justify;
   white-space: pre-wrap;
 }
 
-.form-admin {
+.formAdmin {
   display: flex;
   flex-direction: column;
 }
-.form-admin textarea {
+.formAdmin textarea {
   height: 25em;
   resize: none;
 }

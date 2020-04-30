@@ -18,12 +18,12 @@ const exibePostagens = (post) => {
 
    const postagem =
       `
-      <a href="leitura.html?id=${post._id}" class="container-post">
-         <h2 class="titulo-post">${post.titulo}</h2>
-         <p class="paragrafo-post">${post.paragrafo.substr(0, 250)}  ...</p>
+      <a href="leitura.html?id=${post._id}" class="containerPost">
+         <h2 class="tituloPost">${post.titulo}</h2>
+         <p class="paragrafoPost">${post.paragrafo.substr(0, 250)}  ...</p>
       </a>
 
-      <footer class="rodape-post">
+      <footer class="rodapePost">
          <span>Postado em: ${formataData(post.data)}</span>
       </footer>
 

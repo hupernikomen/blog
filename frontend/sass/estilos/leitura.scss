@@ -1,17 +1,17 @@
 
 
-.leitura .titulo-leitura {
+.tituloLeitura {
    @extend %titulo;
 }
 
-.leitura .paragrafo-leitura {
+.paragrafoLeitura {
    @extend %conteudo;
    margin-top: 1em;
    text-align: justify;
    white-space: pre-wrap;
 }
 
-span.data-leitura {
+span.dataLeitura {
    @extend %miniConteudo;
 }
 
